@@ -24,7 +24,7 @@ export default async function Blog() {
     <div className={style.container}>
     {
     products.map((prod)=>(
-      <Link key={prod.id} href={`/blog/${prod.id}`} className={style.row}>
+      <Link key={prod.id} href={`/product/${prod.id}`} className={style.row}>
         <Image
         className={style.blogImage}
         src={prod.thumbnail}
