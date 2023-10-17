@@ -1,0 +1,18 @@
+.container{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px 25px;
+        color: #bbb;
+}
+.logo{
+    flex: 1;
+    color: #bbb;
+}
+.links{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
