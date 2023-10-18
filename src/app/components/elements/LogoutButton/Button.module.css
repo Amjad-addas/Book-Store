@@ -6,4 +6,10 @@
     color: black;
     padding: 2px 6px;
     margin-left: 20px;
+    cursor: pointer;
 }
+@media (max-width: 678px) {
+    .logout{
+        margin-left: 0;
+    }
+   }

@@ -16,7 +16,14 @@
   flex-direction: column;
   gap: 50px;
 }
+@media (max-width: 1178px) {
+  .col{
+    display: none;
+  }
+ }
+
 .title{
+  width: 80%;
   font-size: 72px;
   font-weight: 900;
   background: linear-gradient( to bottom, #53c28b, #bbb);
@@ -24,6 +31,7 @@
   -webkit-text-fill-color: transparent;
 }
 .dec{
+  width: 80%;
   font-size: 24px;
   line-height: 2rem;
 }
@@ -37,5 +45,6 @@
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 5px;
+  margin-top: 10px ;
   width: max-content;
 }

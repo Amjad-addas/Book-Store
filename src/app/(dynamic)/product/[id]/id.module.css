@@ -38,8 +38,8 @@
     
 }
 .img{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
     gap: 22px;
     margin: 20px 0;
 }
@@ -47,4 +47,13 @@
 text-align: justify;
 columns: 2;
 
+}
+@media (max-width: 678px) {
+    .text{
+        text-align: start;
+        columns: 1;
+   }
+   .img img{
+        width: 100%;
+   }
 }
