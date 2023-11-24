@@ -1,8 +1,8 @@
 import { data } from '@/app/data'
 import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
-  card:JSON.parse(sessionStorage.getItem("card"))||[],
-  price:JSON.parse(sessionStorage.getItem("price"))||0,
+  card:[],
+  price:0,
 }
 export const cardSlice = createSlice({
   name: 'card',
@@ -24,11 +24,6 @@ export const cardSlice = createSlice({
             }
             
             state.price=state.price+actions.payload.price
-            const priceSaved=JSON.stringify(state.price)
-            sessionStorage.setItem('price',priceSaved)
-
-            const cardSaved=JSON.stringify(state.card)
-            sessionStorage.setItem('card',cardSaved)
         },
         removeFromCard (state,actions){
             
@@ -42,11 +37,6 @@ export const cardSlice = createSlice({
               actions.payload.price=parseInt(actions.payload.price.slice(0,-1))
             }
             state.price=state.price-actions.payload.price
-            const priceSaved=JSON.stringify(state.price)
-            sessionStorage.setItem('price',priceSaved)
-
-           const cardSaved = JSON.stringify(state.card);
-           sessionStorage.setItem("card", cardSaved);
         }
   },
 })
