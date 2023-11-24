@@ -1,0 +1,206 @@
+.sale{
+
+    background:  url('../../../image/photo_2023-11-04_15-27-46.png') no-repeat ;
+    background-size: cover;
+    filter: blur(18px);
+    border: none;
+    width: 100%;
+    height: 100vh
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 33;
+
+}
+.container{
+
+    font-weight: bold;
+    position: absolute;
+    height: calc(100vh - 55px);
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+
+
+}
+.addImage{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    gap: 32px;
+    align-items: center;
+    flex: 1;
+}
+.bookImage{
+    position: relative;
+    width: 421px;
+    height: 662px;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.bookImage::before{
+    content: "";
+    width: 150px;
+    height: 12px;
+    background-color: #381251;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+
+}
+.bookImage::after{
+    content: "";
+    width: 15px;
+    border-radius: 15px;
+    height: 150px;
+    background-color: #381251;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+
+}
+.explain{
+    background-color: #381251;
+    color: #02D2B6;
+    padding: 7px 13px;
+    border-radius: 15px;
+}
+.formAddBook{
+    flex: 1;
+    margin-left: 60px;
+}
+.column{
+    background-color: #000000;
+    width: 2px;
+    border: none;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.formAddBook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 12px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.price , .payWay,.fileType,.Pdf,.formPara{
+    background-color: #381251;
+    padding: 20px 90px;
+    text-align: center;
+    border-radius: 50px;
+}
+.Title{
+    color: #02D2B6;
+    padding: 8px;
+    font-size: 20px;
+}
+.priceInput{
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #5f2e80;
+    
+}
+.sign{
+    position: absolute;
+    top: 50%;
+    color: #000000;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.payWay{
+    padding: 20px 40px;
+}
+.formImage{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fileType{
+    padding: 18px 12px;
+}
+.fileInput{
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #5f2e80;
+ 
+}
+.fileInput::placeholder{
+    color: #000000;
+    font-size: large;
+    font-weight: bolder;
+}
+.Pdf{
+    font-size: 30px;
+    padding: 18px 18px;
+    min-width: 450px;
+    color: #02D2B6;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.formPara{
+    color: #02D2B6;
+    font-size: larger;
+}
+.btn{
+    padding: 8px 20px;
+    font-size: larger;
+    border-radius: 50px;
+    background-color: #381251;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (max-width: 990px){
+    .sale,.column{
+        display: none;
+    }
+    .overlay{
+        background: linear-gradient(to right,#2f2bc4,#001480);
+        position: static;
+        height: inherit;
+    }
+    .container{
+        position: static;
+        height: inherit;
+    }
+    .formAddBook{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        overflow: visible;
+    }
+}
+@media only screen and (max-width: 400px){
+    .bookImage{
+        width: 300px;
+    }
+    .Pdf{
+        min-width:auto;
+    }
+}

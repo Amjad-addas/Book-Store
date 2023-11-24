@@ -1,0 +1,13 @@
+.cardPurchase{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+.linkToCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    max-width: 250px;
+}

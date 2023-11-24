@@ -1,0 +1,12 @@
+.container{
+    background: linear-gradient(to right , #202DA2 ,#389179ba, #389179ba);
+    height: 100vh;
+    overflow-y: scroll;
+}
+.storePage{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
+}
+.contactStore{
+    padding: 0 0 30px 20px;
+}

@@ -1,0 +1,42 @@
+.container{
+        background: linear-gradient(to right ,#5820A2,#67B2D4BA);
+        height: 100vh;
+        padding: 100px 50px;
+}
+.titleContact{
+    color: #FF61EE;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.contactDeve{
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    flex-wrap: wrap;
+}
+.deveName{
+    font-size: 40px;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 60px;
+    margin-left: 80px;
+}
+.deveMail{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.icon{
+    margin-right: 20px;
+}
+@media only screen and (max-width: 667px){
+    .container{
+        height: inherit;
+
+    }
+    .deveMail{
+        font-size: 25px;
+    }
+}

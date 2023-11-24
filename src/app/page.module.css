@@ -1,50 +1,53 @@
 
-.container {
-  min-height: calc(100vh - 160px);
-  padding: 15px ;
-  max-width: 1360px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
+.container{
 
+  color: #56FEFD;
+  width: 100%;
+  height: 100vh;
+  background: transparent url('../image/photo_2023-11-04_15-27-46.png') no-repeat  ;
+  background-size: cover;
+  opacity: 1;
 }
-.col{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-@media (max-width: 1178px) {
-  .col{
-    display: none;
-  }
- }
 
 .title{
-  width: 80%;
-  font-size: 72px;
-  font-weight: 900;
-  background: linear-gradient( to bottom, #53c28b, #bbb);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.dec{
-  width: 80%;
-  font-size: 24px;
-  line-height: 2rem;
-}
-.btn{
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #53c28b;
-  padding: 10px;
-  border: none;
-  color: white;
+  padding: 100px 0 0 72px  ;
+  text-wrap: wrap;
+  font-size: 40px;
+  letter-spacing: 7.7px;
   text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 10px ;
-  width: max-content;
+
+}
+.subTitle{
+  font-size: 40px;
+  letter-spacing: 7.7px;
+  text-transform: uppercase;
+  padding: 0 0 0 100px  ;
+  font-weight: bolder;
+}
+.graph{
+  width: 400px;
+  font-size: 30px;
+  padding: 10px 0 0 100px  ;
+}
+.contact{
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 20px;
+  bottom: 40px;
+  text-transform: capitalize;
+  left: 40px;
+}
+
+@media only screen and (max-width: 800px){
+  .container{
+  background: linear-gradient(to right,#2f2bc4,#001480);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  }
+  .title,.contact,.graph,.subTitle{
+    padding-left: 25px;
+  }
+
 }
