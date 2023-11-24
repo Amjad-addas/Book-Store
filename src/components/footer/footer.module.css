@@ -1,0 +1,9 @@
+.footer{
+      background: linear-gradient(to right,#2f2bc4,#001480);
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      align-items: center;
+      padding: 50px;
+      color: white;
+}
